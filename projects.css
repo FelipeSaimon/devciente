@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    position: relative;
+    margin-top: 25px;
+}
+
+.title-projects{
+    font-size: 30px;
+}
+
+.projects{
+    /* position: absolute; */
+    /* left: 5%; */
+
+    margin: auto;
+    width: 90vw;
+    overflow-x: none;
+
+}
+.project{
+    width: 98%;
+    height: 580px;
+    margin-top: 50px;
+    padding: 30px;
+    padding-inline-start: 410px;
+
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.content{
+    width: 350px;
+    height: 230px;
+    margin-block: 10px;
+    margin-inline: 10px;
+    padding:25px;
+    border: solid 2px #4970EC;
+    border-radius: 20px;
+    scroll-snap-align: calc(10%);
+    pointer-events: none;
+    scroll-behavior: smooth;
+}
+
+a.github{
+    display: block;
+    width: 25px;
+    margin: 10px;
+    margin-left: 250px;
+}
+
+
+
+.title-project{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 15px;
+}
+
+.text-project{
+    font-size: 15px;
+    line-height: 18px;
+    padding: 50px;
+}
+
+.content .language{
+    margin-block: 15px;
+    margin-left: -15px;
+    color: #8892B0;
+    text-align: justify;
+}
