@@ -6,7 +6,6 @@
 
 body{
     display: block;
-    position: relative;
     margin-top: 25px;
 }
 
@@ -15,14 +14,17 @@ body{
 }
 
 .projects{
-    /* position: absolute; */
-    /* left: 5%; */
 
-    margin: auto;
-    width: 90vw;
+
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     overflow-x: none;
 
 }
+
 .project{
     width: 98%;
     height: 580px;
@@ -30,13 +32,12 @@ body{
     padding: 30px;
     padding-inline-start: 410px;
 
-
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     overflow: hidden;
-    scroll-snap-type: x mandatory;
+
 }
 
 .content{
@@ -47,9 +48,7 @@ body{
     padding:25px;
     border: solid 2px #4970EC;
     border-radius: 20px;
-    scroll-snap-align: calc(10%);
-    pointer-events: none;
-    scroll-behavior: smooth;
+
 }
 
 a.github{
@@ -57,8 +56,9 @@ a.github{
     width: 25px;
     margin: 10px;
     margin-left: 250px;
+    cursor: pointer;
+    
 }
-
 
 
 .title-project{
@@ -79,4 +79,14 @@ a.github{
     margin-left: -15px;
     color: #8892B0;
     text-align: justify;
+}
+
+
+
+.left, .right{
+    width: 70px;
+    height: 10;
+    display: flex;
+    flex-direction: row;
+
 }

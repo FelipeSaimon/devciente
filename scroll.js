@@ -1,7 +1,11 @@
-document.querySelector('.project').addEventListener('wheel', Event => {
+
+const project = document.querySelector('project')
+document.querySelector('.project').addEventListener('click', Event => {
+    project.insertAdjacentElement('beforebegin', left)
     if(Event.deltaY > 0){
-        Event.target.scrollBy(300, 0)
+        console.log(left)
     }else{
-        Event.target.scrollBy(-300, 0)
+        console.log('direita')
+        // Event.target.scrollBy(-300, 0)
     }
 })

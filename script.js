@@ -26,8 +26,6 @@ function createObject(respostaConvertida){
         Descricao: '',
         lang:''
     }
-    //let svg1 = document.querySelector('.svgGit')
-    //let project
 
     for(let i = 0; i < number; i++){
         //console.log(i)
@@ -52,9 +50,7 @@ function createObject(respostaConvertida){
         a.classList.add('github')
         container.appendChild(a)
         a.insertAdjacentHTML('beforeend', github_logo)
-        //a.append()
-
-        //console.log(a)
+        
 
         h4.classList.add('title-project')
         h4.textContent = dados.Nome
