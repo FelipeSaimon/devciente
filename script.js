@@ -65,5 +65,16 @@ function createObject(respostaConvertida){
 
     }
 
+    document.querySelector('.project').addEventListener('wheel', Event =>{
+
+        if(Event.deltaY > 0){
+            if(window.pageYOffset == 0){
+                Event.target.scroll(200, 0)
+            }
+        }else{
+            Event.target.scroll(-200, 0)
+        }
+    })
+
 }
 

@@ -14,14 +14,13 @@ body{
 }
 
 .projects{
-
-
-    width: 97vw;
+    margin: auto;
+    width: 90vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    overflow-x: none;
+    /* overflow-x: none; */
 
 }
 
@@ -35,7 +34,8 @@ body{
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
-    /* overflow-x: scroll; */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     overflow: hidden;
 
 }
@@ -48,7 +48,8 @@ body{
     padding:25px;
     border: solid 2px #4970EC;
     border-radius: 20px;
-
+    scroll-snap-align: center;
+    scroll-behavior: calc(5s);
 }
 
 a.github{
@@ -82,11 +83,11 @@ a.github{
 }
 
 
-
+/* 
 .left, .right{
     width: 70px;
     height: 10;
     display: flex;
     flex-direction: row;
 
-}
+} */
