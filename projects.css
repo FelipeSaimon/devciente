@@ -14,43 +14,46 @@ body{
 }
 
 .projects{
-    margin: auto;
-    width: 90vw;
+    /* margin: auto; */
+    width: 100vw;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    /* overflow-x: none; */
 
 }
 
 .project{
-    width: 98%;
-    height: 580px;
+    width: 86vw;
+    height: 500px;
     margin-top: 50px;
-    padding: 30px;
-    padding-inline-start: 410px;
+    /* padding: 30px; */
 
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: center;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    overflow: hidden;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+    justify-content: initial;
 
+    scroll-snap-type: x mandatory;
+    -webkit-transform-origin-x: initial;
+    overscroll-behavior: inherit;
+    
+    overflow: hidden;
 }
 
-.content{
+div.content{
     width: 350px;
     height: 230px;
-    margin-block: 10px;
-    margin-inline: 10px;
+    margin: 10px;
     padding:25px;
     border: solid 2px #4970EC;
     border-radius: 20px;
-    scroll-snap-align: center;
-    scroll-behavior: calc(5s);
+
+    /* transform: translateX(150px); */
 }
+
+
 
 a.github{
     display: block;
@@ -83,11 +86,11 @@ a.github{
 }
 
 
-/* 
+
 .left, .right{
     width: 70px;
-    height: 10;
+    height: 10%;
     display: flex;
     flex-direction: row;
-
-} */
+    cursor: pointer;
+}

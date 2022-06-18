@@ -30,7 +30,7 @@ function createObject(respostaConvertida){
     for(let i = 0; i < number; i++){
         //console.log(i)
         let project = document.querySelector('.project')
-        let container = document.createElement('div')
+        var container = document.createElement('div')
 
         let a = document.createElement('a')
         let h4 = document.createElement('h4')
@@ -63,18 +63,30 @@ function createObject(respostaConvertida){
         p1.textContent = dados.lang
         container.appendChild(p1)
 
+
     }
-
-    document.querySelector('.project').addEventListener('wheel', Event =>{
-
-        if(Event.deltaY > 0){
-            if(window.pageYOffset == 0){
-                Event.target.scroll(200, 0)
-            }
-        }else{
-            Event.target.scroll(-200, 0)
-        }
-    })
-
 }
 
+let left = document.querySelector('svg.left')
+let right = document.querySelector('svg.right')
+let elementoAtual = 0
+let scrolling = 0
+
+
+left.addEventListener('click', function(){
+    let eixoX = document.querySelectorAll('div .content')
+    scrolling += 370
+    
+    for(let i = 0; i < eixoX.length; i++){
+        eixoX[i].style = `Transform: translateX(${scrolling}px)`
+    }
+})
+
+right.addEventListener('click', function(){
+    let eixoX = document.querySelectorAll('div .content')
+    scrolling = scrolling - 370
+    for(let i = 0; i < eixoX.length; i++){
+        eixoX[i].style = `Transform: translateX(${scrolling}px)`
+    }
+
+})
