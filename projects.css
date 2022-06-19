@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+/* html{
+    font-size: 62.5%;
+} */
+
 body{
     display: block;
-    margin-top: 25px;
+    margin-top: 2.5rem;
 }
 
 .title-projects{
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .projects{
@@ -43,12 +47,13 @@ body{
 }
 
 div.content{
-    width: 350px;
-    height: 230px;
-    margin: 10px;
-    padding:25px;
+    display: block;
+    width: 35rem;
+    height: 23rem;
+    margin: 1rem;
+    padding: 2.5rem;
     border: solid 2px #4970EC;
-    border-radius: 20px;
+    border-radius: 2rem;
 
     /* transform: translateX(150px); */
 }
@@ -57,30 +62,30 @@ div.content{
 
 a.github{
     display: block;
-    width: 25px;
-    margin: 10px;
-    margin-left: 250px;
+    width: 2.5rem;
+    margin: 1rem;
+    margin-left: 25rem;
     cursor: pointer;
     
 }
 
 
 .title-project{
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 600;
-    line-height: 29px;
-    margin-bottom: 15px;
+    line-height: 2.9rem;
+    margin-bottom: 1.5rem;
 }
 
 .text-project{
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     padding: 50px;
 }
 
 .content .language{
-    margin-block: 15px;
-    margin-left: -15px;
+    margin-block: 1.5rem;
+    margin-left: -1.5rem;
     color: #8892B0;
     text-align: justify;
 }
@@ -88,9 +93,31 @@ a.github{
 
 
 .left, .right{
-    width: 70px;
+    width: 7rem;
     height: 10%;
     display: flex;
     flex-direction: row;
     cursor: pointer;
+}
+
+@media (min-width: 375px) and (max-width: 425px){
+
+    body{
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .title-projects{
+        font-size: 2.5rem;
+    }
+    .projects .left .right{
+        width: 15%;
+    }
+
+    .project{
+        width: 100%; 
+    }
+
+
+
 }

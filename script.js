@@ -67,6 +67,30 @@ function createObject(respostaConvertida){
     }
 }
 
+// let scrolling = 0
+// let scrolly = document.querySelector('.project')
+// let eixoX = document.querySelectorAll('.content');
+
+// scrolly.addEventListener('wheel', function(){
+    
+//     if(Event.deltaY > 0){
+//         scrolling += 50
+//         for(let i = 0; i < eixoX.length; i++){
+//             eixoX[i].style = `Transform: translateX(${scrolling}px)`
+//         }
+//     }else if(Event.deltaY < 0){
+//         scrolling -= 50
+//         for(let i = 0; i < eixoX.length; i++){
+//             eixoX[i].style = `Transform: translateX(${scrolling}px)`
+//         } 
+//     }
+
+
+
+// })
+
+
+
 let left = document.querySelector('svg.left')
 let right = document.querySelector('svg.right')
 let elementoAtual = 0

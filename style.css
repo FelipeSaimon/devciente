@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     display: block;
     width: 100%;
@@ -27,17 +31,17 @@ body{
     display: none;
     background-color: #709bf0;
     border-radius: 6px;
-    padding: 10px;
+    padding: 1rem;
 
 }
 
 .navigator ul ul li{
-    margin-top: 8px;
+    margin-top: 0.8rem;
 }
 
 .navigator ul ul li:hover{
-    border-radius: 4px;
-    padding-inline: 4px;
+    border-radius: 0.4rem;
+    padding-inline: 0.4rem;
     background-color: #03217F;
 }
 
@@ -52,9 +56,9 @@ body{
 }
 
 .navigator ul:hover>ul{
-    margin-left: 5px;
+    margin-left: 0.5rem;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 2.2rem;
     display: inline-block;
 
 }
@@ -65,8 +69,8 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 25px;
-    margin-right: 50px;
+    margin-top: 2.5rem;
+    margin-right: 5rem;
 }
 
 ul li{
@@ -74,8 +78,8 @@ ul li{
 }
 
 ul li svg{
-    width: 35px;
-    margin: 10px;
+    width: 3.5rem;
+    margin: 1rem;
 }
 
 .home{
@@ -83,31 +87,66 @@ ul li svg{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 35px;
+    /* margin: auto; */
+    margin-left: 3.5rem;
 }
 
 .home img{
-    width: 350px;
+    width: 35rem;
 }
 
 
 div h1{
-    font-size: 45px;
+    font-size: 4.5rem;
     font-weight: 600;
 }
 
 div p{
     font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-align: justify;
 }
 
 span#nick{
-    font-size: 60px;
+    font-size: 6rem;
     color: #E35B30;
 }
 
-label {
-    font-family: ra;
+@media (min-width: 375px) and (max-width: 425px){
+
+    .navigator-sup{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: -50px;
+
+    }
+
+    .navigator svg{
+        width: 2.8rem;
+        height: 3rem;
+    }
+
+    ul.social-medias{
+        width: 80%;
+
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .home h1 .home span{
+        font-size: 80%;
+        margin: auto;
+    }
+
+    .home .about{
+        width: 80%;
+    }
 }
