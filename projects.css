@@ -31,7 +31,7 @@ body{
 .project{
     width: 86vw;
     height: 500px;
-    margin-top: 50px;
+    margin-top: 5rem;
     /* padding: 30px; */
 
     display: grid;
@@ -41,7 +41,7 @@ body{
 
     scroll-snap-type: x mandatory;
     -webkit-transform-origin-x: initial;
-    overscroll-behavior: inherit;
+
     
     overflow: hidden;
 }
@@ -54,8 +54,6 @@ div.content{
     padding: 2.5rem;
     border: solid 2px #4970EC;
     border-radius: 2rem;
-
-    /* transform: translateX(150px); */
 }
 
 
@@ -63,7 +61,7 @@ div.content{
 a.github{
     display: block;
     width: 2.5rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
     margin-left: 25rem;
     cursor: pointer;
     
@@ -107,17 +105,80 @@ a.github{
         margin-top: 1rem;
     }
 
+    .navigator{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .title-projects{
-        font-size: 2.5rem;
-    }
-    .projects .left .right{
-        width: 15%;
+        font-size: 2.2rem;
+        margin: auto;
     }
 
-    .project{
-        width: 100%; 
+
+    .project {
+        display: grid;
+        grid-template-columns: auto ;
+        grid-auto-flow: row;
+        width: 90vw;
+        height: 50%;
     }
 
+    div.content{
+        width: 70vw;
+        height: 80%;
+    }
+
+    h4.title-project{
+        font-size: 1.7rem;
+    }
+
+    .text-project{
+        font-size: 1.1rem;
+        padding: 20rem;
+    }
+
+    .content a.github{
+        margin-left: 20rem;
+        cursor: pointer;
+        
+    }
+
+    .left, .right{
+        visibility: hidden;
+    }
+
+}
+
+
+
+@media (min-width: 426px) and (max-width: 768px){
+    .project {
+        display: grid;
+        grid-template-columns: auto ;
+        grid-auto-flow: row;
+        width: 90vw;
+        height: 50%;
+    }
+
+    div.content{
+        width: 95%;
+        height: 80%;
+    }
+
+    .text-project{
+        padding: 0;
+    }
+
+    a.github{
+        margin-left: 0;
+    }
+
+    .left, .right{
+        visibility: hidden;
+    }
 
 
 }

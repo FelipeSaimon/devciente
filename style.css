@@ -19,12 +19,23 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+.navigator-sup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 1.5rem;
+    margin-top: 1rem;
+}
+
 /* ------ MENU --------*/
 .navigator{
-    position: absolute;
-    top: 35px;
-    left: 35px;
+    margin-left: 4rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .navigator ul ul{
@@ -32,7 +43,8 @@ body{
     background-color: #709bf0;
     border-radius: 6px;
     padding: 1rem;
-
+    margin-left: 1rem;
+    /* margin-top: 5rem; */
 }
 
 .navigator ul ul li{
@@ -55,8 +67,9 @@ body{
     margin-top: 0;
 }
 
-.navigator ul:hover>ul{
-    margin-left: 0.5rem;
+.navigator ul:hover ul{
+    /* margin-left: -0.5rem; */
+    margin-top: -2.3rem;
     cursor: pointer;
     font-size: 2.2rem;
     display: inline-block;
@@ -69,8 +82,10 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
     margin-top: 2.5rem;
-    margin-right: 5rem;
+
 }
 
 ul li{
@@ -87,8 +102,8 @@ ul li svg{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* margin: auto; */
-    margin-left: 3.5rem;
+    margin: auto;
+    padding: 0.9rem;
 }
 
 .home img{
@@ -97,8 +112,11 @@ ul li svg{
 
 
 div h1{
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     font-weight: 600;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 div p{
@@ -106,32 +124,43 @@ div p{
     font-size: 1.5rem;
     line-height: 2rem;
     text-align: justify;
+    margin-inline: 3rem;
 }
 
 span#nick{
-    font-size: 6rem;
+    font-size: 7.2rem;
     color: #E35B30;
 }
 
-@media (min-width: 375px) and (max-width: 425px){
+footer.copy{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+@media (min-width: 360px) and (max-width: 425px){
 
     .navigator-sup{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin-right: -50px;
-
+        margin-top: 0;
     }
 
+
     .navigator svg{
-        width: 2.8rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.7rem;
     }
 
     ul.social-medias{
-        width: 80%;
+        width: 100%;
+    }
 
+    .social-medias svg{
+        width: 70%;
+        margin-inline: -1rem;
     }
 
     .home{
@@ -142,11 +171,40 @@ span#nick{
     }
 
     .home h1 .home span{
+        width: 100vw;
         font-size: 80%;
-        margin: auto;
+        
     }
 
-    .home .about{
-        width: 80%;
+    .about{
+        width: 90%;
+        margin-inline: 2rem;
     }
 }
+
+
+@media (min-width: 426px) and (max-width: 768px){
+
+
+    .home{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        margin-inline: 1rem;
+    }
+    .about{
+        width:70%;
+    }
+
+    .navigator-sup{
+        margin-inline: 5rem;
+        margin-top: 0;
+    }
+}
+
+/*Colocar responsividade a partir de 768px*/
+
+/* 
+@media (min-width: 768px){
+
+} */
