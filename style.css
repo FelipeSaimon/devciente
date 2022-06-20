@@ -94,6 +94,7 @@ ul li{
 
 ul li svg{
     width: 3.5rem;
+    height: 3.2rem;
     margin: 1rem;
 }
 
@@ -111,7 +112,7 @@ ul li svg{
 }
 
 
-div h1{
+.home h1{
     font-size: 5.5rem;
     font-weight: 600;
     margin-right: 0;
@@ -119,7 +120,7 @@ div h1{
     text-align: center;
 }
 
-div p{
+.home p{
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -138,7 +139,39 @@ footer.copy{
     margin: 1.5rem;
 }
 
-@media (min-width: 360px) and (max-width: 425px){
+@media (max-width: 415px){
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home h1{
+        font-size: 4rem; 
+    }
+    
+    .home span#nick{
+        font-size: 5.5rem;
+    }
+
+    .home p{
+        width: 70%;
+        margin: auto;
+
+    }
+    
+    .social-medias{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social-medias svg{
+        width: 70%;
+        margin: 0.5rem;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 520px){
 
     .navigator-sup{
         display: flex;
@@ -146,12 +179,13 @@ footer.copy{
         justify-content: space-around;
         align-items: center;
         margin-top: 0;
+
     }
 
 
-    .navigator svg{
-        width: 2.5rem;
-        height: 2.7rem;
+    .social-medias svg{
+        width: 70%;
+        margin: 0.5rem;
     }
 
     ul.social-medias{
@@ -159,8 +193,8 @@ footer.copy{
     }
 
     .social-medias svg{
-        width: 70%;
-        margin-inline: -1rem;
+
+
     }
 
     .home{
@@ -183,7 +217,7 @@ footer.copy{
 }
 
 
-@media (min-width: 426px) and (max-width: 768px){
+@media (min-width: 520px) and (max-width: 768px){
 
 
     .home{
