@@ -126,6 +126,7 @@ ul li svg{
     line-height: 2rem;
     text-align: justify;
     margin-inline: 3rem;
+    padding: 1rem;
 }
 
 span#nick{
@@ -192,11 +193,6 @@ footer.copy{
         width: 100%;
     }
 
-    .social-medias svg{
-
-
-    }
-
     .home{
         display: flex;
         flex-direction: column;
@@ -206,28 +202,26 @@ footer.copy{
 
     .home h1 .home span{
         width: 100vw;
-        font-size: 80%;
         
     }
 
     .about{
         width: 90%;
-        margin-inline: 2rem;
+        margin-inline: 1rem;
     }
 }
 
 
-@media (min-width: 520px) and (max-width: 768px){
-
-
+@media (min-width: 520px) and (max-width: 900px){
     .home{
-        margin-top: 2rem;
+        margin-top: 1rem;
         display: flex;
         flex-direction: column;
-        margin-inline: 1rem;
     }
+    
     .about{
         width:70%;
+        margin-top: 2rem;
     }
 
     .navigator-sup{
@@ -236,9 +230,87 @@ footer.copy{
     }
 }
 
-/*Colocar responsividade a partir de 768px*/
+@media (min-width: 901px) and (max-width: 1320px){
 
-/* 
-@media (min-width: 768px){
+    .navigator-sup{
+        margin-inline: 6rem
+    }
 
-} */
+    .home{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        margin-inline: 1rem;
+    }
+
+    .home h1 .home span{
+        width: 100vw;
+        
+    }
+
+    span#nick{
+        font-size: 6.5rem;
+    }       
+
+    .home h1{
+        font-size: 5rem;
+    }
+
+    .about{
+        width:60%;
+    }
+
+}
+
+
+@media (min-width: 1321px) and (max-width: 1440px){
+    .navigator-sup{
+        margin-inline: 10rem
+    }
+
+    .home{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        margin-inline: 1rem;
+        width: 145rem
+    }
+
+    .home h1 .home span{
+        width: 100vw; 
+    }
+
+    span#nick{
+        font-size: 6.5rem;
+    }       
+
+    .home h1{
+        font-size: 5rem;
+    }
+
+    .about{
+        width:60%;
+    }
+}
+
+@media (min-width: 1441px){
+
+    body{
+        width: 100vw;
+        margin: 0;
+    }
+    .home{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        width: 145rem;
+    }
+
+    .navigator-sup{
+        margin-inline-end: 11rem;
+    }
+
+    footer.copy{
+        margin-inline: 0;
+    }
+}
