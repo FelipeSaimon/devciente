@@ -23,19 +23,16 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-inline: 1.5rem;
-    margin-top: 1rem;
+    margin-inline: 2rem;
 }
 
 /* ------ MENU --------*/
 .navigator{
-    margin-left: 4rem;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .navigator ul ul{
@@ -44,7 +41,6 @@ body{
     border-radius: 6px;
     padding: 1rem;
     margin-left: 1rem;
-    /* margin-top: 5rem; */
 }
 
 .navigator ul ul li{
@@ -57,7 +53,6 @@ body{
     background-color: #03217F;
 }
 
-
 .navigator ul ul li a{
     color: #CEDAF2;
     text-decoration: none;
@@ -68,16 +63,13 @@ body{
 }
 
 .navigator ul:hover ul{
-    /* margin-left: -0.5rem; */
     margin-top: -2.3rem;
     cursor: pointer;
     font-size: 2.2rem;
     display: inline-block;
-
 }
 
 /* ------ MENU --------*/
-
 ul{
     display: flex;
     flex-direction: row;
@@ -85,7 +77,6 @@ ul{
     align-items: center;
     margin-right: 2rem;
     margin-top: 2.5rem;
-
 }
 
 ul li{
@@ -110,7 +101,6 @@ ul li svg{
 .home img{
     width: 35rem;
 }
-
 
 .home h1{
     font-size: 5.5rem;
@@ -157,7 +147,6 @@ footer.copy{
     .home p{
         width: 70%;
         margin: auto;
-
     }
     
     .social-medias{
@@ -173,16 +162,13 @@ footer.copy{
 }
 
 @media (min-width: 415px) and (max-width: 520px){
-
     .navigator-sup{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         margin-top: 0;
-
     }
-
 
     .social-medias svg{
         width: 70%;
@@ -211,7 +197,6 @@ footer.copy{
     }
 }
 
-
 @media (min-width: 520px) and (max-width: 900px){
     .home{
         margin-top: 1rem;
@@ -230,14 +215,12 @@ footer.copy{
     }
 }
 
-@media (min-width: 901px) and (max-width: 1320px){
-
+@media (min-width: 901px) and (max-width: 1366px){
     .navigator-sup{
         margin-inline: 6rem
     }
 
     .home{
-        margin-top: 2rem;
         display: flex;
         flex-direction: row;
         margin-inline: 1rem;
@@ -245,7 +228,6 @@ footer.copy{
 
     .home h1 .home span{
         width: 100vw;
-        
     }
 
     span#nick{
@@ -259,11 +241,9 @@ footer.copy{
     .about{
         width:60%;
     }
-
 }
 
-
-@media (min-width: 1321px) and (max-width: 1440px){
+@media (min-width: 1367px) and (max-width: 1440px){
     .navigator-sup{
         margin-inline: 10rem
     }
@@ -294,11 +274,15 @@ footer.copy{
 }
 
 @media (min-width: 1441px){
-
     body{
         width: 100vw;
         margin: 0;
     }
+
+    .navigator-sup{
+        margin-inline: 10rem
+    }
+    
     .home{
         margin-top: 2rem;
         display: flex;
