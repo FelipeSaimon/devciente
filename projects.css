@@ -230,7 +230,7 @@ a.github{
 
 
 
-@media (min-width: 520px) and (max-width: 768px){
+@media (min-width: 520px) and (max-width: 900px){
     ul.social-medias{
         margin: 0;
         margin-right: 2rem;
@@ -239,7 +239,6 @@ a.github{
     ul.social-medias li{
         width: 100%;
         margin: 0;
-        
     }
 
     .project {
@@ -247,12 +246,14 @@ a.github{
         grid-template-columns: auto ;
         grid-auto-flow: row;
         width: 90vw;
-        height: 50%;
+        height: 100%;
+        margin-bottom: 2rem;
     }
 
     div.content{
-        width: 95%;
-        height: 80%;
+        width: 35rem;
+        height: 95%;
+        margin: auto;
     }
 
     .text-project{
@@ -266,6 +267,68 @@ a.github{
     .left, .right{
         visibility: hidden;
     }
+}
 
 
+@media (min-width: 901px) and (max-width: 1320px){
+    body{
+        width: 100%;
+    }
+
+    .projects{
+        width: 95%;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    .project{
+        margin-top: 2rem;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .project .content{
+        width: 35rem;
+        height: 95%;
+
+    }
+
+}
+
+
+@media (min-width: 1321px) and (max-width: 2185px){
+    body{
+        width: 100%;
+    }
+
+    .projects{
+        width: 95%;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    .project{
+        margin-top: 2rem;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .project .content{
+        width: 35rem;
+        height: 95%;
+
+    }
+
+    a.github{
+        margin-left: 0;
+    }
+}
+
+
+@media (min-width: 2186px){
+    .left, .right{
+        visibility: hidden;
+    }
 }
